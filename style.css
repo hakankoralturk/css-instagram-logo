@@ -1,0 +1,73 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: relative;
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #3051f1 10%, #c92bb7 70%) no-repeat;
+    border-radius: 60px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
+}
+
+.logo:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    content: '';
+    background: radial-gradient(circle farthest-corner at 28% 100%, #fcdf8f 0%, #fbd377 10%, #fa8e37 22%, #f73344 35%,
+    rgba(247, 51, 68, 0) 65%) no-repeat;
+}
+
+.logo * {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+}
+
+.logo > .stripe {
+    top: 36px;
+    left: 36px;
+    width: 184px;
+    height: 184px;
+    border-radius: 57px;
+    border: 17px #ffffff solid;
+}
+
+.logo > .stripe > .circle {
+    top: 25px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 17px #ffffff solid;
+}
+
+.logo > .stripe > .corner {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    right: 17px;
+    top: 17px;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
